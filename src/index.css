@@ -5,6 +5,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: rgb(241, 235, 235);
 }
 
 body,
@@ -21,4 +22,83 @@ html {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+
+
+.window_XP {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  filter: drop-shadow(5px 7px 5px rgba(0,0,0,0.48));
+  -webkit-filter: drop-shadow(5px 7px 5px rgba(0,0,0,0.48));
+  -moz-filter: drop-shadow(5px 7px 5px rgba(0,0,0,0.48));
+}
+
+.windowBar {
+  width: 100%;
+  height: 30px;
+  background: blue;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.closeButton {
+  background-color: red;
+  width: 20px;
+  height: 20px;
+  margin-right: 6px;
+  text-align: center;
+  border-radius: 3px;
+}
+
+.windowFooter {
+  height: 20px;
+  width: 100%;
+  background-color: rgba(248, 248, 255, 0.774);
+  border-top: 1px solid rgb(209, 206, 206);
+  border-bottom: 2px solid blue;
+  border-left: 2px solid blue;
+  border-right: 2px solid blue;
+  box-shadow: 0 5px 5px rgba(0,0,0,0.5);
+}
+
+.windowMain {
+  background-color: white;
+  flex-grow: 1;
+  border-style: solid;
+  border-color: blue;
+  border-width: 0;
+  border-right-width: 2px;
+  border-left-width: 2px;
+  box-shadow: 0 0 5px rgba(0,0,0,0.5);
+  padding: 8px;
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}
+
+.is-hidden {
+  display: none;
+}
+
+.addButton {
+  width: 40px;
+  height: 40px;
+  border: 1px solid yellow;
+  border-radius: 5px;
+  background-color: rgb(221, 73, 28);
+  text-align: center;
+  font-size: 28px;
+  cursor: pointer;
+}
+
+.answer {
+  color: rgb(68, 67, 67);
+  font-size: 28px;
+  font-style: italic;
+  padding: 20px;
 }
