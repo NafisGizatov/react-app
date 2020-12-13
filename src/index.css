@@ -12,6 +12,7 @@ body,
 #root,
 html {
   min-height: 100%;
+  height: 100%;
   width: 100%;
 }
 
@@ -24,6 +25,10 @@ code {
     monospace;
 }
 
+.MainWindow {
+  width: 100%;
+  height: 100%;
+}
 
 .window_XP {
   position: absolute;
@@ -35,6 +40,7 @@ code {
 }
 
 .windowBar {
+  flex-shrink: 0;
   width: 100%;
   height: 30px;
   background: blue;
@@ -55,6 +61,7 @@ code {
 }
 
 .windowFooter {
+  flex-shrink: 0;
   height: 20px;
   width: 100%;
   background-color: rgba(248, 248, 255, 0.774);
@@ -101,4 +108,19 @@ code {
   font-size: 28px;
   font-style: italic;
   padding: 20px;
+}
+
+.BeforeQuestion {
+  border: 1px solid #e6c17c;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.QuestionPic,
+.QuestionPic img {
+  max-width: 100%;
+}
+
+.is-blured {
+  opacity: 0.1;
 }
