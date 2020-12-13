@@ -121,6 +121,12 @@ code {
   max-width: 100%;
 }
 
-.is-blured {
-  opacity: 0.1;
+.is-blured .windowMain {
+  color: hsla(0,0%,0%,0);
+ text-shadow: rgb(17, 14, 14) 0 0 5px;
+ transition: text-shadow 1s cubic-bezier(0, 1, 0, 1);
+}
+
+.is-blured .QuestionPic img {
+  filter: blur(10px);
 }
